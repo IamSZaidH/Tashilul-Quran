@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "414837233003",
+    "project_id": "syed-zaid-husain",
+    "storage_bucket": "syed-zaid-husain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414837233003:android:7bac797243c9abc069a82e",
+        "android_client_info": {
+          "package_name": "com.android.tashilulquran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414837233003-9da3nj6ik0j5912etn61gdm2kr8m2ohg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpdxyGIyp---WU_PHn-JoPkBohdQSMbL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414837233003-9da3nj6ik0j5912etn61gdm2kr8m2ohg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

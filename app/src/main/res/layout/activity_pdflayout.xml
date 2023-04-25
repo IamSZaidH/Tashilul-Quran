@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zaid.tashilulquran.PDFLayout">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#aee2fa"
+
+    >
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/back_black"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_tashil_ul_quran_logo"/>
+        <TextView
+            android:id="@+id/heading_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para 1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amita_bold"
+            android:layout_marginTop="5dp"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/currPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amita_bold"
+                />
+            <TextView
+                android:id="@+id/totalPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/25"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amita"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/addBookmark"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/bookmarks_add"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:tooltipText="Save BookMark"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfviewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aee2fa" />
+</LinearLayout>

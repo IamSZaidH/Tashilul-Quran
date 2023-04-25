@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+
+}
+android {
+    namespace 'com.zaid.tashilulquran'
+    compileSdk 33
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    defaultConfig {
+        applicationId "com.zaid.tashilulquran"
+        minSdk 21
+        targetSdk 31
+        versionCode 3
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    ndkVersion '25.1.8937393'
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'//path of Android.mk file
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildToolsVersion '30.0.3'
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.google.firebase:firebase-analytics:20.1.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+}
